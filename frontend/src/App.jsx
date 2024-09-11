@@ -34,7 +34,7 @@ function PredictionForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8000/api/predict/', {
+    const response = await fetch('https://healthcare-readmission-prediction-website.onrender.com/api/predict/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ features }),
